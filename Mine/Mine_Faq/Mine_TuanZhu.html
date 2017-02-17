@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html>
+<!-- InstanceBegin template="/Templates/Shared.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>团主必读</title>
+    <link href="../../PublicCSS/css/reset.css" rel="stylesheet" type="text/css">
+    <script src="../../PublicJS/jquery-1.11.0.js" type="text/javascript"></script>
+    <script src="../../PublicJS/Shared.js" type="text/javascript"></script>
+    <!-- InstanceEndEditable -->
+    <!-- InstanceBeginEditable name="head" -->
+    <script type="text/javascript">
+        document.write("<script src='../PublicJS/other.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+        document.write("<link href='css/Mine_Faq.css?" + Math.random() + "' rel='stylesheet' type='text/css' />");
+    </script>
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+    <!-- InstanceBeginEditable name="EditRegion3" -->
+    <div class="Mine_Faq">
+        <!--<h3>1.发团其实很简单</h3>
+        <p>
+            1)平台上所有社区同时开团
+        </p>
+        <p>
+            2)收货，分货：分团主家自提和代收点自提两种。代收点：根据你填写的物流信息联系配送、收货并分货。买家每人每单只收1元！！外小区仅限代收点自提。要更省心，自有产品也可以把渠道交给平台，留言给我们吧，合作详谈。
+        </p>
+        <p>
+            3)重复开团 - 非拼单团购，再次开团只点一下等待开团：首次截团后产品会直接显示在“等待开团”中，妈妈们可随时关注。再次开团：直接在“团主”的商品列表里点击即可。如不再开团，可直接下架。
+        </p>
+        <p>
+            4)结算：全部买家确认收货或发送“取货通知”后5个工作日内，系统自动结算到你的“钱包”里。
+        </p>
+        <h3>2.发团后，一键式解决</h3>
+        <p>接通知 系统自动告知你 团成功啦 数量 金额 巴拉巴拉。。。</p>
+        <p>按一下（团主-查看订单-发货提醒）系统发给买家 发货啦</p>
+        <p>按一下（团主-查看订单-取货提醒）系统发给买家 取货啦</p>
+        <p>不用按 系统自动告知买家 该确认签收啦</p>
+        <p>不用按 等着系统结算，哇哈哈哈~</p>
+        <h3>
+            3.	如果你的产品品质够好，评价够高，我们还会为你做：
+        </h3>
+        <p>会在平台首页展示</p>
+        <p>会发消息推荐给其他妈妈</p>
+        <p>会为你写专题报道</p>
+        <p>总之，我们的目的就是会让更多更多的麻麻来关注好的，产品。</p>
+        <p>而且，而且</p>
+        <p>全部免费，免费，免费</p>
+        <h3></h3>
+        <p>请注意，不！可！以！刷好评，一旦发现，立即封号，绝不手软</p>-->
+		<img class="tuan1" src="images/tuan1.png" alt="" />
+		<img class="tuan2" src="images/tuan2.png" alt="" />
+		<img class="tuan3" src="images/tuan3.png" alt="" />
+		<img class="tuan4" src="images/tuan4.png" alt="" />
+    </div>
+    <script type="text/javascript">
+
+        $(function () {
+            css();
+        })
+
+
+        function Q(obj) {
+            var width = $(window).width()
+            if (width > 720) {
+                width = 720;
+            }
+            var num = (parseInt(obj) / 720).toFixed(20) * width;
+            return num + "px";
+        }
+        function css() {
+            $("body").css({ "padding-bottom": Q(140) })
+            $(".Mine_Faq").css({ "padding-left": Q(20), "padding-top": Q(20), "padding-right": Q(20) });
+            $(".Mine_Faq p").css({ "line-height": Q(58), "font-size": Q(32), "text-indent": Q(32) })
+            $(".Mine_Faq h3").css({ "font-size": Q(36), "padding-bottom": Q(20), "padding-top": Q(20) })
+            $("footer a").eq("3").find("span").addClass("light");
+            $("footer a").eq("3").find("b").addClass("light");
+            $(".Mine_Faq>img").css({"width":"100%"})
+        }
+
+    </script>
+    <!-- InstanceEndEditable -->
+    <footer>
+        <a href="../../Index/index.html" class="home">
+            <span class=""></span>
+            <b class="">首页</b>
+        </a>
+        <a href="../../Zaituan/ZaiTuan.html" class="Ingroup">
+            <span></span>
+            <b>在团</b>
+        </a>
+        <a href="../../Issue/Issue.html" class="publish">
+            <span></span>
+            <b>发布</b>
+        </a>
+        <a href="../mine/mine.html" class="mine">
+            <span></span>
+            <b>我的</b>
+        </a>
+        <a href="../../GenTuan/GenTuan.html" class="Withgroup">
+            <span></span>
+            <b>跟团</b>
+        </a>
+    </footer>
+</body>
+<!-- InstanceEnd -->
+</html>

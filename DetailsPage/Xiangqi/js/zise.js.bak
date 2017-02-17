@@ -1,0 +1,47 @@
+/**
+ * Created by Administrator on 2016/5/20.
+ */
+$(function(){
+    $("h1").css({"padding-top":Q(20),"font-size":Q(30),"padding-bottom":Q(15),"padding-left":Q(120)});
+    $("div .img").css({"width":Q(720),"height":Q(358)});
+    $("div .tou").css({"top":Q(22),"left":Q(20),"width":Q(80),"height":Q(80)});
+    $("div .tree").css({"top":Q(80),"right":Q(10),"width":Q(253),"height":Q(80)});
+    $("div b").css({"top":Q(93),"right":Q(75),"font-size":Q(30)});
+    $("input").css({"font-size":Q(32),"padding-left":Q(20),"line-height":Q(94),"width":Q(720)});
+});
+function Q(obj){
+    var width = $(window).width();
+    if(width>720){
+        width=720;
+    }
+    var num=(parseInt(obj)/720).toFixed(20) * width;
+    return num+"px";
+}
+
+$('#content').keypress(function (event) {
+    var pid = $("#pid").val();
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        var content = $(this).val();
+        if (!content || content.trim(content) == "") {
+           return alert("«Î ‰»Î¡Ù—‘ƒ⁄»›");
+        } else {
+            $.ajax({
+                type: "post",
+                url: "/Message/add/",
+                data: { pId: pid, content: content },
+                dataType: "json",
+                success: function(resData) {
+                    if (resData.errorcode != "0" && resData.errorcode != "101") {
+                        return alert(resData.errordesc);
+
+                    } else if (resData.errorcode == "101") {
+                        window.location.href = "/User/getAuthUrl?type=10&url=" + window.location.href;
+                        return;
+                    }
+                    alert("¡Ù—‘≥…π¶!");
+                }
+            })
+        }
+    }
+});

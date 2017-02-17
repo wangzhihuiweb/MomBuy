@@ -1,0 +1,296 @@
+/*reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+font,
+h3,
+h4,
+h5,
+h6,
+form,
+legend,
+input,
+textarea,
+p,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a,
+input,
+button,
+select,
+textarea {
+	outline: none;
+	color: #333;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+em {
+	font-style: normal;
+}
+
+textarea {
+	resize: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	star: expression(this.onFocus=this.blur());
+}
+
+:focus {
+	outline: 0;
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 15px;
+	font-weight: normal
+}
+
+input,
+label,
+select {
+	vertical-align: middle;
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+html .clearfix {
+	display: block;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+
+/*input:focus {
+	outline: none;
+}
+
+::selection {
+	background: none;
+	color: none;
+}
+
+::-moz-selection {
+	background: none;
+	color: none;
+}
+
+::-webkit-selection {
+	background: none;
+	color:none;
+}*/
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	border: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+	/*font-size:inherit !important;*/
+}
+
+/* 重置表格元素 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+
+input::-webkit-input-placeholder {
+	/* WebKit browsers*/
+	color: #b6b6b6;
+}
+
+input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18*/
+	color: #b6b6b6;
+}
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+*/
+	color: #b6b6b6;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10+*/
+	color: #b6b6b6;
+}
+
+textarea::-webkit-input-placeholder {
+	/* WebKit browsers*/
+	color: #b6b6b6;
+}
+
+textarea:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18*/
+	color: #b6b6b6;
+}
+
+textarea::-moz-placeholder {
+	/* Mozilla Firefox 19+*/
+	color: #b6b6b6;
+}
+
+textarea:-ms-input-placeholder {
+	/* Internet Explorer 10+*/
+	color: #b6b6b6;
+}
+.ovfHiden {
+	overflow: hidden;
+	height: auto;
+}
+
+body {
+	max-width: 720px;
+	margin: auto auto;
+	/*background: #eceded;*/
+	/*background: #000;*/
+}
+footer {
+	position: fixed;
+	z-index: 11;
+	width: 100%;
+	max-width: 720px;
+	background: #FFFFFF;
+	clear: both;
+	z-index: 6;
+	display: block;
+	bottom:0px;
+}
+
+footer a {
+	position: relative;
+	float: left;
+	display:block;
+	text-align: center;
+	vertical-align:middle;
+}
+
+footer a b {
+	display: block;
+	font-weight: inherit;
+	margin-left:3px;white-space: nowrap;
+	color: #999999;
+}
+
+footer a b.light {
+	color: #ff718d;
+}
+
+footer a span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+footer a.home span {
+	background-image: url(../images/home.png);
+}
+footer a.home span.light {
+	background-image: url(../images/homeHover.png);
+}
+
+footer a.Ingroup span {
+	background-image: url(../images/Ingroup.png);
+}
+footer a.Ingroup b{ margin-left: 4px;}
+footer a.Ingroup span.light {
+	background-image: url(../images/IngroupHover.png);
+}
+footer a.mine{float: right;}
+footer a.mine span {
+	background-image: url(../images/mine.png);
+}
+footer a.mine b{ margin-left:1px;}
+footer a.mine span.light {
+	background-image: url(../images/mineHover.png);
+}
+footer a.Withgroup{float: right;}
+
+footer a.Withgroup span {
+	background-image: url(../images/Withgroup.png);
+}
+footer a.Withgroup b{ margin-left: 4px;}
+footer a.Withgroup span.light {
+	background-image: url(../images/WithgroupHover.png);
+}
+
+footer a.publish{ position:absolute; left: 50%; float: right;}
+
+footer a.publish span {
+	background-image: url(../images/publish.png);
+}
+footer a.publish b{position: absolute; margin-left:0px;}
+footer a.publish span.light {
+	background-image: url(../images/publishhover.png);
+}
+
+
+

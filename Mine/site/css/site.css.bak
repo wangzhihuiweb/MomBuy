@@ -1,0 +1,145 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+
+.site {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.site div.div {
+	border-bottom: 1px solid #eceded;
+	position: relative;
+	background: #FFFFFF;
+	clear: both;
+}
+
+.site div.div .name {
+	clear: both;
+	overflow: hidden;
+}
+
+.site div.div .name h3 {
+	float: left;
+	color: #333333;
+}
+
+.site div.div .name span {
+	float: left;
+	color: #333333;
+}
+
+.site div.div .address {
+	color: #888888;
+	clear: both;
+}
+
+.site div.div .address font {
+	color: #ff718d;
+}
+
+.site div.div i {
+	position: absolute;
+	display: block;
+	top: 50%;
+	background-image: url(../images/dot.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.site div.weixdz a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.NewAdd {
+	width: 100%;
+	text-align: center;
+	background: #ff718d;
+	color: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+}
+
+.Addsite {
+	
+	clear: both;
+	display: none;
+}
+
+.Addsite div {
+	border-bottom: 1px solid #eceded;
+	position: relative;
+	background: #FFFFFF;
+	clear: both;
+}
+
+.Addsite div span {
+	float: left;
+	color: #333333;
+}
+
+.Addsite div i {
+	display: block;
+	float: right;
+	background-image: url(../images/dot.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.Addsite div input {
+	float: left;
+	color: #333333;
+}
+
+.Addsite a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: #ff718d;
+	color: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+}
+
+.selAdd {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	background: #FFFFFF;
+	clear: both;
+	display: none;
+}
+
+.selAdd .Tit {
+	background: #FFFFFF;
+	position: fixed;
+	clear: both;
+	top: 0;
+}
+
+.selAdd .Tit h3 {
+	float: left;
+	color: #ff718d;
+}
+
+.selAdd .Tit img {
+	float: right;
+}
+
+.selAdd .Adname {
+	clear: both;
+	overflow-y: scroll;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.selAdd .Adname p {
+	clear: both;
+	color: #333333;
+	border-bottom: 1px solid #eceded;
+}

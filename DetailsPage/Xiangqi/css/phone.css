@@ -1,0 +1,43 @@
+* { box-sizing: border-box; }
+html { font-size: 10px;color: #333333; }
+body {
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    background: #eceded;
+    margin: auto auto;
+    max-width:720px;
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img { border: 0; vertical-align: middle;}
+#phone{
+    background: #ffffff;
+    font-size: 32px;
+    /*padding:36px 20px 32px 20px ;*/
+    /*margin-bottom: 20px;*/
+}
+#phone>b{
+    /*margin-right: 42px;*/
+    font-weight: normal;
+}
+#phone>input{
+    outline: none;
+    border: none;
+    font-size: 32px;
+}
+button{
+    /*margin-left: 20px;*/
+    /*margin-bottom: 294px;*/
+    /*width: 680px;*/
+    /*height: 90px;*/
+    /*font-size: 40px;*/
+    background: #FF718D;
+    border: none;
+    color: #ffffff;
+}

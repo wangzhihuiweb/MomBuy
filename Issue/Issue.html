@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>发布</title>
+		<script src="../PublicJS/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	    <script type="text/javascript">
+            document.write("<script src='/MomBuy/PublicJS/other.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+            document.write("<script src='/MomBuy/PublicJS/UtityUrl.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+    	    document.write("<link href='../PublicCSS/reset.css?" + Math.random() + "' rel='stylesheet' type='text/css' />");
+    	    document.write("<link href='css/Issue.css?" + Math.random() + "' rel='stylesheet' type='text/css' />");  
+    	</script>
+		
+	</head>
+
+	<body>
+		<div class="title">
+			<input class="" type="text" value="" placeholder="标题 最多可填写40个字" id="title"/>
+		</div>
+		<div class="Fresh">
+			<textarea name="" placeholder="请尽量详尽，包括产地、包装规格、生产日期、有效期等。(如商品为生鲜请标注请尽快取货)" rows="" cols="" id="content"></textarea>
+		</div>
+		
+		<div class="Picture">
+			<div class="tit"><h3>商品图片</h3><p>（最多可上传9张图片，前3张默认为主图）</p></div>
+			
+			<div class="PicList">
+				<div onClick="getProduct()" class="Add"></div>
+			</div>
+			
+		</div>
+		
+		<div class="Pudiv">
+			<span>单价</span>
+			<input type="number" placeholder="请输入价格" onkeyup="" onblur="Bltwo()" value="" id="money" />	
+		</div>
+		
+		<div class="Pudiv">
+			<span>起团数</span>
+			<input type="number" placeholder="每个小区的起团数量" value="" onkeyup="value=value.replace(/[^\d]/g,'')"  id="minNum" />	
+		</div>
+		
+		<div class="Pudiv">
+			<span>截团上限</span>
+			<input type="number" placeholder="各个小区团购件数总和" value="" onkeyup="value=value.replace(/[^\d]/g,'')"  id="maxNum" />	
+		</div>
+		
+		<div class="Pudiv">
+			<span>开团时间</span>
+			<!--<input type="datetime-local" onblur="qdss()" id="startDate" value="" />-->
+			<input type="text" readonly placeholder="请选择开团时间" id="startDate">
+			<s></s>
+		</div>
+		
+		<div class="Pudiv">
+			<span>截团时间</span>
+			<!--<input type="datetime-local" onblur="qdjtss()" value=""  id="endDate" />-->
+			<input type="text" readonly placeholder="请选择截团时间" id="endDate" >
+			<s></s>
+		</div>
+		
+		<div class="Pudiv">
+			<span>预计送货时间</span>
+			<div>
+				<b>成团后</b><input  name="" id="Deliverytime" type="text"><b>天</b>
+			</div>
+		</div>
+		
+		<div class="Pudiv Mtop">
+			<span>团购次数 <a href="javascript:"><img src="images/help.jpg" alt="" /></a></span>
+			<p><i id="repeat"></i><b>重复</b></p>
+			<p><i id="disposable" class="light"></i><b>一次性</b></p>
+			
+		</div>
+		
+		<div class="Pudiv Freq">
+			<span>自提点 <a href="javascript:"><img src="images/help.jpg" alt="" /></a></span>
+			<p><i id="daishou"></i><b>代收点</b></p>
+			<p><i  class="light" id="ziqu" ></i><b>团主家</b></p>
+            <input type="text" placeholder="请输入您的详细地址具体到门牌号" id="address" />
+            <input type="text" placeholder="请输入团主姓名" id="tuanzhuname" />
+            <input type="text" placeholder="请输入团主联系电话" id="tuanzhumobile" />
+		</div>
+
+		<div class="Pudiv OtherCell">
+			<span>是否允许其他小区购买 <a href="javascript:"><img src="images/help.jpg" alt="" /></a></span>
+			<p><i id="notOpen"></i><b>否</b></p>
+			<p><i id="open" class="light"></i><b>是</b></p>			
+		</div>
+		
+		<div class="Protocol">
+			<i id="isok" class="light"></i>
+			<span>签署审核协议</span>
+		</div>
+		
+		<footer>
+			<a href="javascript:" onClick="publish(0)">保存</a>
+			<a href="javascript:" onClick="publish(1)">发布</a>
+		</footer>
+		
+		<!--选择照片-->
+		<div class="PoModule">
+			<div class="albumTit"><img src="images/return.png" alt=""/>照片<a href="javascript:">选择相册</a></div>
+			
+			<div class="Photolist">
+				<div class="camera"><img src="images/camera.png" alt="" /><!--<input type="file" accept="image/*;" capture="camera" >--></div>
+				<div><img src="images/pic.png" alt="图片" /><b class="light"></b></div>
+				<div><img src="images/pic.png" alt="图片" /><b></b></div>
+				<div><img src="images/pic.png" alt="图片" /><b></b></div>
+				<div><img src="images/pic.png" alt="图片" /><b></b></div>
+			</div>
+			
+			
+			<div class="Affirm">
+				<p><span>5</span>/9</p>
+				<a href="javascript:">确认 </a>
+			</div>
+		</div>
+		
+		<!--协议模块-->
+		<div class="UdpModule">
+			<div class="AuditProtocol">
+				<h3>审核协议</h3>
+				<div class="Project">
+                    1.作为团长，请确保你所发布信息的真实性，有效性。<br />
+                    2.对平台上类似的其他商品不得恶意诋毁。<br />
+                    3.请确保产品的品质，一旦发现货高价、以次充好、夸大宣传的行为我们会立即封号。<br />
+                    4.未经允许，禁止在分享的图文中诱导关注自己的微信、手机、微店、淘宝。<br />
+                    5.团长需对自己所团购的商品的质量、保质期等问题负责。<br />
+                    6.团长有权对因客户原因导致的超过保质期的、误用或不正确的使用方法所造成的食品质量问题，或撕毁、涂改标贴、防伪标记的拒绝退换或赔偿。<br />
+                    7.由于本平台为免费服务平台，本着调节的原则会对双方纠纷进行解决，但不承担相应法律责任。
+
+				</div>
+				
+				<div class="handle">
+					<a class="nono" href="javascript:">取消</a>
+					<a class="agree" href="javascript:">同意</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--日期模块-->
+		<div class="DateModule">
+			<img src="images/date.png" alt="时间"/>
+		</div>
+		
+		<script type="text/javascript">
+		    document.write("<script src='js/Issue.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+		</script>
+		<!--手写模块-->
+		<div class="model">
+			<div class="model-date">
+				<h1>日期:</h1>
+				<div class="date">
+					<ul>
+						<li class="year YY">
+							<a class="add" href="javascript:">+</a>
+							<p>2016</p>
+							<a class="jian" href="javascript:">-</a>
+						</li>
+						<li class="year mid MM">
+							<a class="add" href="javascript:">+</a>
+							<p>4</p>
+							<a class="jian" href="javascript:">-</a>
+						</li> 
+						<li class="year DD">
+							<a class="add" href="javascript:">+</a>
+							<p>21</p>
+							<a class="jian"  href="javascript:">-</a>
+						</li>  
+					</ul>
+				</div>
+				<h1>时间:</h1>
+				<div class="time TT">
+					<a class="add" href="javascript:">+</a>
+						<p>14</p>
+					<a class="jian"  href="javascript:">-</a>
+				</div>
+				<div class="btnbtn">
+					<a id="setDate" href="javascript:">设置</a>
+					<a id="quxiaBtn" href="javascript:">取消</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

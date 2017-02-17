@@ -1,0 +1,216 @@
+* { box-sizing: border-box;  color: #333333;}
+html { font-size: 10px; }
+body {
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    background: #eceded;
+    margin: auto auto;
+    max-width:720px;
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: normal;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img { border: 0; vertical-align: top;}
+#top{
+    /*height: 176px;*/
+    text-align: center;
+    position: relative;
+}
+#top>img{
+    /*width:355px;*/
+    /*height: 52px;*/
+    /*margin-top: 70px;*/
+}
+#top span{
+	position: absolute;
+	font-size: 26px;
+	color: #FF718D;
+}
+#main{
+    background: #ffffff;
+    /*margin-bottom: 20px;*/
+}
+#main>.banner{
+    /*padding: 41px 20px;*/
+    overflow: hidden;
+}
+#main>.banner>img{
+    /*width: 90px;*/
+    /*height:90px;*/
+    float: left;
+}
+#main>.banner>h1{
+    float: left;
+    /*width: 548px;*/
+    /*font-size: 32px;*/
+    /*margin-left: 20px;*/
+    /*line-height: 46px;*/
+}
+#main>ul{
+    /*padding: 0 20px;*/
+}
+#main>ul>li{
+    /*font-size: 32px;*/
+    /*height: 71px;*/
+}
+#main>ul>li>b{
+    float: right;
+    font-weight: normal;
+}
+#add{
+    /*padding: 30px 20px;*/
+    background: #ffffff;
+}
+#add>h1{
+    /*font-size: 32px;*/
+    /*margin-bottom: 14px;*/
+    font-weight: normal;
+    color: #888888;
+}
+#add span,#add b{
+    /*font-size: 34px;*/
+    /*line-height: 44px;*/
+    font-weight: normal;
+}
+#add>div>b{
+    /*margin-right: 40px;*/
+}
+#kankan{
+    /*font-size: 32px;*/
+    /*padding: 19px 20px;*/
+}
+#kankan>span{
+    /*margin-left: 20px;*/
+    /*font-size: 30px;*/
+    color: #666666;
+}
+#list{
+    margin-bottom: 47px;
+}
+#list>ul>li{
+    /*padding-top: 30px;*/
+    /*padding-bottom: 24px;*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    border-bottom: 2px solid #ECEDED;
+    background: #ffffff;
+    overflow: hidden;
+}
+#list>ul>li>div>img{
+    float: left;
+    /*width: 80px;*/
+    /*height:80px;*/
+    /*margin-right: 20px;*/
+}
+#list>ul>li>div>p{
+    float: left;
+    /*margin: 0;*/
+}
+#list>ul>li>div>p>span{
+    /*font-size: 28px;*/
+    color: #666666;
+}
+#list>ul>li>div>p>b{
+    display: block;
+    font-weight: normal;
+    /*font-size: 32px;*/
+    /*margin-top: 6px;*/
+}
+#list>ul>li>div>p>b>span{
+    color: #FF718D;
+}
+#list>ul>li>div>span{
+    float: right;
+    /*font-size: 24px;*/
+    color: #B6B6B6;
+}
+footer {
+	position: fixed;
+	z-index: 11;
+	width: 100%;
+	max-width: 720px;
+	background: #FFFFFF;
+	clear: both;
+	z-index: 6;
+	display: block;
+	bottom:0px;
+}
+
+footer a {
+	display: block;
+	position: relative;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	vertical-align:middle;
+}
+
+footer a b {
+	display: block;
+	font-weight: inherit;
+	margin-left:3px;white-space: nowrap;
+	color: #999999;
+}
+
+
+
+footer a span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+footer a.home span {
+	background-image: url(../images/home.png);
+}
+footer a.home span.light {
+	background-image: url(../images/homeHover.png);
+}
+
+footer a.Ingroup span {
+	background-image: url(../images/Ingroup.png);
+}
+footer a.Ingroup b{ margin-left: 4px;}
+footer a.Ingroup span.light {
+	background-image: url(../images/IngroupHover.png);
+}
+footer a.mine{float: right;}
+footer a.mine span {
+	background-image: url(../images/mine.png);
+}
+footer a.mine b{ margin-left:1px;}
+footer a.mine span.light {
+	background-image: url(../images/mineHover.png);
+}
+footer a.Withgroup{float: right;}
+
+footer a.Withgroup span {
+	background-image: url(../images/Withgroup.png);
+}
+footer a.Withgroup b{ margin-left: 4px;}
+/*footer a.Withgroup span.light {
+	background-image: url(../images/WithgroupHover.png);
+}*/
+
+footer a.publish{ position:absolute; left: 50%; float: right;}
+
+footer a.publish span {
+	background-image: url(../images/publish.png);
+}
+footer a.publish b{position: absolute; margin-left:0px;}
+footer a.publish span.light {
+	background-image: url(../images/publishhover.png);
+}
+
+@media screen and (max-width: 460px){
+	#list>ul>li{
+    border-bottom: 1px solid #ECEDED;
+}

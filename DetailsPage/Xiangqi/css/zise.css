@@ -1,0 +1,68 @@
+* { box-sizing: border-box;  color: #333333;}
+html { font-size: 10px; }
+body {
+    font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+    background: #eceded;
+    margin: auto auto;
+    max-width:720px;
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img { border: 0; vertical-align: middle;}
+h1{
+    background: #fff;
+    /*font-size: 30px;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 15px; ;*/
+    /*padding-left: 120px;*/
+}
+div .img{
+    width: 720px;
+    height: 358px;
+}
+div .tou{
+position: absolute;
+/*top: 22px;*/
+/*left: 20px;*/
+width: 80px;
+height: 80px;
+}
+div .tree{
+    position: absolute;
+    /*top: 80px;*/
+    /*right: 10px;*/
+    width: 253px;
+    height: 80px;
+}
+div b{
+    font-weight: normal;
+    color: #ffffff;
+    position: absolute;
+    /*font-size: 30px;*/
+    /*top: 93px;*/
+    /*right: 75px;*/
+}
+input{
+    outline: none;
+    border: none;
+    /*width: 720px;*/
+    background: #ffffff;
+    /*font-size: 32px;*/
+    /*padding-left: 20px;*/
+    /*line-height: 94px;*/
+}
+a{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	background: #FF718D;
+	color: #FFFFFF;
+}

@@ -1,0 +1,32 @@
+/**
+ * Created by Administrator on 2016/5/19.
+ */
+$(function(){
+    $("#main>.banner").css({"margin-bottom":Q(38),"padding-top":Q(30),"padding-bottom":Q(30),"padding-left":Q(20),"padding-right":Q(20)});
+    $("#main>.banner>img").css({"width":Q(90),"height":Q(90)});
+    $("#main>.banner>h1").css({"width":Q(548),"font-size":Q(32),"margin-left":Q(20),"line-height":Q(46)});
+    $("#main>ul").css({"padding-left":Q(20),"padding-right":Q(20)});
+    $("#main>ul>li").css({"font-size":Q(32),"height":Q(71)});
+    $(".biaoti").css({"padding-left":Q(20),"font-size":Q(32),"line-height":Q(80)});
+    $(".add").css({"padding-top":Q(28),"padding-bottom":Q(28),"padding-left":Q(20),"padding-right":Q(20)});
+    $(".add>h1").css({"font-size":Q(28),"margin-bottom":Q(14)});
+    $(".add span,#add b").css({"font-size":Q(34),"line-height":Q(48)});
+    $(".add>div>b").css({"margin-right":Q(40),"font-size":Q(32)});
+    $(".list").css({"padding-left":Q(20),"padding-right":Q(20)});
+    $(".list>ul>li>.user").css({"margin-top":Q(20),"margin-bottom":Q(15),"line-height":Q(56)});
+    $(".list>ul>li>.user>img").css({"width":Q(55),"height":Q(56),"margin-right":Q(22)});
+    $(".list>ul>li>.user>h3").css({"font-size":Q(32)});
+    $(".list>ul>li>.user>h4").css({"font-size":Q(30)});
+    $(".list>ul>li>.count").css({"font-size":Q(28),"margin-bottom":Q(35)});
+	$(".list>ul>li>.count>img").css({"width":Q(151),"height":Q(58),"margin-top":Q(-15)});
+    $(".list>.all>div").css({"font-size":Q(32),"margin-top":Q(26),"margin-bottom":Q(36)});
+    $(".list>.all>img").css({"width":Q(160),"height":Q(68),"margin-bottom":Q(36)});
+});
+function Q(obj){
+    var width = $(window).width();
+    if(width>720){
+        width=720;
+    }
+    var num=(parseInt(obj)/720).toFixed(20) * width;
+    return num+"px";
+}

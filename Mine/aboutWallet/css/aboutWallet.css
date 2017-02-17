@@ -1,0 +1,16 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+.mine{
+	background-image: url(../images/bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.aboutWallet{ clear: both;}
+
+.aboutWallet h3{ clear: both; color: #000000;}
+.aboutWallet p{ clear: both; color: #4f4f4f;}

@@ -1,0 +1,154 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+
+.Wrap{ clear: both; overflow: hidden;}
+.Wrap .Tit{ clear: both; background: #FFFFFF; position: relative;}
+.Wrap .Tit img{float: left; position:absolute; z-index: 2; display:block;}
+.Wrap .Tit h3{ float: left; color: #333333;}
+/*成团11次*/
+#tree{
+	overflow:hidden;
+}
+#tree img{
+	width:253px;
+	height:80px;
+	position:absolute;
+	top:80px;
+	right:10px;
+	z-index:10;
+}
+#tree b{
+    font-weight: normal;
+    color: #ffffff;
+    position: absolute;
+    font-size: 30px;
+    top: 93px;
+    right: 75px;
+	z-index:50;
+}
+/*banner*/
+
+.pics {
+	overflow: hidden;
+	position: relative;
+	visibility: visible;
+	width: 100%;
+}
+
+.pics ul {
+	-webkit-padding-start: 0px;
+	list-style: none;
+	width: 6000px;
+	-webkit-transition: 500ms;
+	-webkit-transform: translate3d(-1262px, 0px, 0px);
+}
+
+.pics ul li {
+	width: 640px;
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+}
+
+.pics ul li img {
+	width: 100%;
+}
+
+.pics>ol {
+	/*background: #000;*/
+	/*height: 40px;*/
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	z-index: 1;
+	margin:auto auto auto auto;
+	text-align: center;
+}
+
+.pics>ol>li {
+	display: inline-block;
+	/*margin: 10px 2px;*/
+	/*width: 14px;
+	height: 14px;*/
+	min-width: 8px;
+	min-height:8px;
+	background-color: #ffffff!important;
+}
+
+.pics>ol>li.on {
+	background-color: #ff718d!important;
+}
+
+.Wrap .name{ clear: both; color: #333333; text-align: center; background: #FFFFFF;}
+.Wrap .present{ clear: both; color: #888888; text-align: center; background: #FFFFFF;}
+.Wrap .price{ clear: both; color: #888888; text-align: center; color: #ff718d; background: #FFFFFF;}
+
+
+.Wrap .time{ text-align: center; clear: both; background: #FFFFFF; width: 100%; display: table;}
+.Wrap .time span{ color:#888888;}
+.Wrap .time span font{ color: #333333;}
+
+
+.Wrap .Quantity{text-align: center; clear: both; border-bottom: 1px solid #eceded; background: #FFFFFF; color: #888888; width: 100%; display: table;}
+.Wrap .Quantity font{ color:#ff718d;}
+
+
+.Wrap .Pickup{ clear: both; background: #FFFFFF;}
+.Wrap .Pickup p{ clear: both;}
+.Wrap .Pickup p span{ color: #888888;}
+.Wrap .Pickup p b{color: #333333; font-weight: inherit;}
+
+.Wrap .Photode{ clear: both; color: #333333;}
+.Wrap .Photode_img{ width: 100%; max-width: 720px; text-align:center;}
+.Wrap .Photode_img img{ width: 100%; clear: both; max-width: 720px;}
+
+
+.Wrap .yourNeir{ clear: both;}
+.Wrap .yourNeir p{ float: left; color: #333333;}
+.Wrap .yourNeir p span{ color: #666666;}
+
+.Wrap .yourNeir b{ float:right; position: relative; display: block; color: #666666; font-weight: inherit;}
+.Wrap .yourNeir b i{background-image: url(../images/dot.png);background-size: 100% 100%;
+	display: block;
+	position: absolute;
+	background-repeat: no-repeat;}
+
+
+.Megelist{ clear: both; background: #FFFFFF;  overflow: hidden;}
+
+.Megelist .Lis{ border-bottom: 1px solid #eceded; overflow: hidden; clear: both; width: 100%;}
+
+.Megelist .Lis .lis_img{ float:left; overflow: hidden;}
+.Megelist .Lis .lis_img img{width: 100%; height: 100%;}
+
+.Megelist .Lis .lisD{ float: left; overflow: hidden;}
+
+.Megelist .Lis .lisD .mingshijian{ clear: both; width: 100%; overflow: hidden; display: table;}
+.Megelist .Lis .lisD .mingshijian span{ color:#666666; float: left; display: block;}
+.Megelist .Lis .lisD .mingshijian b{ color:#b6b6b6; font-weight: inherit; float: right;}
+
+.Megelist .Lis .lisD .discuss{ clear: both; color: #333333;}
+.Megelist .Lis .lisD .discuss font{ color: #ff718d;}
+
+.Megelist .Lis .lisD .laud{ clear: both; overflow:  hidden;}
+.Megelist .Lis .lisD .laud img{ float: left;}
+.Megelist .Lis .lisD .laud span{ float:left; color: #b6b6b6; display: block;}
+
+
+.Megelist .Lis .lisD_R{ float: right; background: #eceded;}
+
+
+.footR{ position: fixed; bottom: 0; background:#FFFFFF; width: 100%; z-index: 6;}
+.footR a{ display: block; float: left; text-decoration: none;}
+.footR a img{ height: 100%;}
+
+.footR a:last-child{ background:#ff718d; text-align: center; color: #FFFFFF;}
+/*回复按钮*/
+.Megelist .Lis .huifu{
+	float:right;
+	margin-top:25px;
+}

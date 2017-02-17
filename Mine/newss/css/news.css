@@ -1,0 +1,18 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1{
+	padding: 40px 20px;
+	text-align: center;
+	font-size: 42px;
+	color: #000;
+}
+div{
+	font-size: 36px;
+	color: #4F4F4F;
+}

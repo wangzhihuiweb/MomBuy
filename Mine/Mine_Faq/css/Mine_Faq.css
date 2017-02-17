@@ -1,0 +1,17 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #fff;
+	/*background: #000;*/
+}
+.mine{
+	background-image: url(../images/bg.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.Mine_Faq{ clear: both;}
+.Mine_Faq h1{ clear: both; color: #000000;margin: 0 auto;text-align:center;}
+.Mine_Faq h3{ clear: both; color: #000000;}
+.Mine_Faq p{ clear: both; color: #4f4f4f;}
+.Mine_Faq p a{color: #FF718D;}

@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>在团商品</title>
+        <meta name="Keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="../../impublic/css/login/reset.css" />
+		<script src="../PublicJS/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/Swipe-1.0.js"></script>
+		<script type="text/javascript">
+			document.write("<link href='../PublicCSS/reset.css?" + Math.random() + "' rel='stylesheet' type='text/css' />");
+			document.write("<script src='../PublicJS/other.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+			document.write("<link href='css/DetailsPage.css?" + Math.random() + "' rel='stylesheet' type='text/css' />");
+		</script>
+		<style type="text/css">*{font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif !important;}</style>
+	</head>
+
+	<body>
+		<section class="Wrap">
+			<div class="Tit">
+				<img id="headimg" alt="头像" />
+				<h3 id="nickName"></h3>
+				<div class="tree" id=tree>
+					<img src="images/chishu.png" alt="" />
+					<b>已成团<span></span>件</b>
+				</div>
+			</div>
+			<div id="banner" class="pics">
+				<ul></ul>
+				<ol></ol>
+			</div>
+
+			<div class="name"></div>
+
+			<div class="present"></div>
+
+			<div class="price">
+				<font>&yen;</font><span></span>
+			</div>
+
+			<div class="time">
+				<img src="images/time.png" alt="时间" /><span></span>
+			</div>
+
+			<div class="Quantity">
+				<font id="minNum"></font>件起团，在团<font id="buyNum"></font>件，截团上限<font id="maxNum"></font>件
+			</div>
+
+			<div class="Pickup">
+				<p>
+                    <span id="addressTitle"></span><b id="logistics"></b>
+                    <br /><br />
+                    <span>取货时间：</span>成团后<b id="cometime"></b>天
+				</p>
+				<p>
+					&nbsp;
+				</p>
+			</div>
+
+			<div class="Photode">图片详情</div>
+			<div class="Photode_img"></div>
+			<div class="yourNeir">
+				<p>看看你的邻居<span id="youLinju"></span></p>
+				<b onclick="toggleShow(this,1)">展开<i></i></b>
+			</div>
+			<div class="Megelist" id="youLinJuInfo">
+				<!--<div id="defaultLinJu">
+
+                </div>
+                <div id="moreLinJu">
+
+                </div>-->
+
+			</div>
+
+			<div class="yourNeir">
+				<p>买家评论<span  id="pingLun"></span></p>
+				<b onclick="toggleShow(this,2)">展开<i></i></b>
+			</div>
+
+			<div class="Megelist" id="pingLunInfo">
+				<!--<div id="defaultPingLun">
+
+				</div>
+				<div id="morePingLun" style="display: none">
+
+				</div>-->
+			</div>
+			<div class="yourNeir" id="liuYan">
+				<p>商品留言<span></span></p>
+				<b onclick="toggleShow(this,3)">展开<i></i></b>
+			</div>
+
+			<div class="Megelist" id="liuYanInfo">
+				<!--<div id="defaultLiuYan">
+
+				</div>
+				<div id="moreLiuYan" style="display: none">
+
+				</div>-->
+			</div>
+
+			<div class="footR">
+				<a href="../Index/index.html"><img src="images/shouye.png" alt="首页"></a>
+				<a href="javascript:" id="Follownae" onclick="follow()"><img src="images/guanzhu.png" alt="关注"></a>
+				<a id="liuyan" href="javascript:"><img src="images/liuyan.png" alt="留言	"></a>
+				<a id="gentuT" href="javascript:">去跟团</a>
+			</div>
+
+		</section>
+
+		<script type="text/javascript">
+			document.write("<script src='js/DetailsPage.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+			document.write("<script src='../PublicJS/UtityUrl.js?" + Math.random() + "' type='text/javascript'></scr" + "ipt>");
+		</script>
+	</body>
+
+</html>

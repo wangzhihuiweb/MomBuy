@@ -1,0 +1,32 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+
+.news {
+	overflow: hidden;
+	clear: both;
+}
+
+.news a {
+	border-bottom: 1px solid #eceded;
+	display: block;
+	background: #FFFFFF;
+	text-decoration: none;
+}
+
+.news a span {
+	display: block;
+	color: #333333;
+	float: left;
+}
+
+.news a i {
+	display: block;
+	float: right;
+	background-image: url(../images/dot.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}

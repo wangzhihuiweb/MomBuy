@@ -1,0 +1,525 @@
+/*reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+font,
+h3,
+h4,
+p,
+h5,
+h6,
+form,
+legend,
+input,
+textarea,
+th,
+td {
+	 cursor: ;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a,
+input,
+button,
+select,
+textarea {
+	outline: none;
+	color: #333;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+em {
+	font-style: normal;
+}
+
+textarea {
+	resize: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	star: expression(this.onFocus=this.blur());
+}
+
+:focus {
+	outline: 0;
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 15px;
+	font-weight: normal
+}
+
+input,
+label,
+select {
+	vertical-align: middle;
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+html .clearfix {
+	display: block;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+
+/*input:focus {
+	outline: none;
+}
+
+::selection {
+	background: none;
+	color: none;
+}
+
+::-moz-selection {
+	background: none;
+	color: none;
+}
+
+::-webkit-selection {
+	background: none;
+	color:none;
+}*/
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	border: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+	/*font-size:inherit !important;*/
+}
+
+/* 重置表格元素 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+
+input::-webkit-input-placeholder {
+	/* WebKit browsers*/
+	color: #b6b6b6;
+}
+
+input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18*/
+	color: #b6b6b6;
+}
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+*/
+	color: #b6b6b6;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10+*/
+	color: #b6b6b6;
+}
+
+textarea::-webkit-input-placeholder {
+	/* WebKit browsers*/
+	color: #b6b6b6;
+}
+
+textarea:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18*/
+	color: #b6b6b6;
+}
+
+textarea::-moz-placeholder {
+	/* Mozilla Firefox 19+*/
+	color: #b6b6b6;
+}
+
+textarea:-ms-input-placeholder {
+	/* Internet Explorer 10+*/
+	color: #b6b6b6;
+}
+
+body {font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+    background: #eceded;
+    margin: auto auto;
+    max-width:720px;
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img { border: 0; vertical-align: middle;}
+#header,.section{
+    margin:0 auto;
+    background: #ffffff;
+    /*padding: 0 20px;*/
+}
+#main-all,#main-box{
+    min-width: 100%;
+    margin:0 auto;
+    background: #ffffff;
+}
+/*#header{*/
+    /*margin-bottom: 20px;*/
+    /*height:86px;*/
+/*}*/
+#header{ position: fixed; top: 0; background: #FFFFFF; z-index: 9999; width: 100%;}
+#top>ul{
+    /*padding:0 15px;*/
+    text-align: center;
+}
+#top>ul>li{
+    float: left;
+    /*font-size: 36px;*/
+    /*line-height: 82px;*/
+    /*padding:0 10px;*/
+    /*margin-right:50px;*/
+    cursor: pointer;
+}
+#top>ul li:last-child{
+    margin-right:0;
+}
+.active{
+    border-bottom: 4px solid #FF718D;
+    color:#FF718D;
+}
+
+.section{
+    /*padding: 24px 0;*/
+    overflow: hidden;
+    /*margin-bottom:20px;*/
+}
+/*.main{*/
+    /*margin-bottom: 30px;*/
+/*}*/
+.main>p>span{
+	float: left;
+	display:block;
+    /*margin-left: 24px;*/
+    color:#888;
+    /*font-size: 26px;*/
+    /*line-height: 30px;*/
+    position: relative;
+    /*top:5px;*/
+}
+.main>p{ clear: both; overflow: hidden;}
+.main>p>img{
+	float: left;
+    /*width:56px;*/
+    /*height:56px;*/
+}
+.body{
+	position: relative;
+	clear: both;
+    overflow: hidden;
+}
+.body>img{
+    /*width:280px;*/
+    /*height:280px;*/
+    float:left;
+    /*margin-right: 20px;*/
+}
+.body>div{
+	width:380px;
+    float: left;
+}
+.body>div>span{
+    /*font-size: 30px;*/
+  
+   display:inline-block;
+    color:#333;
+}
+.body>i{position: absolute;
+    background-image: url(../images/dengdaituanshu.png);
+    background-size: 100% auto;
+    z-index: 2;
+    display: block;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: inherit;
+    background-repeat: no-repeat;}
+/*.shijian>p{*/
+    /*margin: 30px 0;*/
+/*}*/
+.shijian>p>img{
+	float: left;
+	display: block;
+    /*width: 35px;*/
+    /*height:35px;*/
+}
+.shijian>p>span{
+	display: block;
+	float: left;
+    /*font-size:20px;*/
+    /*line-height: 30px;*/
+    position: relative;
+    /*top:5px;*/
+    /*left:10px;*/
+}
+/*.shijian>p{ clear: both; overflow: hidden;}*/
+.shijian>p>span b{
+    font-weight: normal;
+    color:#888;
+}
+.shijian>div{
+	clear: both;
+	overflow:hidden;
+    font-weight: normal;
+    /*font-size:22px;*/
+    color:#888;
+}
+.shijian>div>span{
+    /*font-size: 24px;*/
+    color: #FF718D;
+}
+.shijian>h1{
+    color: #FF718D;
+    font-weight: normal;
+}
+.foot{ clear: both; overflow: hidden;}
+.foot>h1{
+    color: #FF718D;
+	float:left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    font-weight: normal;
+    /*font-size: 35px;*/
+    /*margin-top:40px;*/
+    /*margin-left: 5px;*/
+}
+.foot>h1>span{
+	color:#FF718D;
+}
+.foot img{
+	display: block;
+    float:right;
+    /*bottom:-10px;*/
+    /*right: -30px;*/
+    /*margin-top:25px;*/
+}
+.foot2{ position: absolute; bottom: 0;}
+.main_foot{
+    overflow: hidden;
+    border-top: 2px dashed  #D1D1D1;
+    /*margin-bottom: 10px;*/
+   background: #FFFFFF;
+}
+.main_foot div{
+    max-width: 680px;
+    margin:0 auto;
+}
+.main_foot div p{
+    margin: 0;
+    color: #888;
+    /*font-size: 28px;*/
+    /*line-height: 88px;*/
+}
+.main_foot div ul{
+	overflow: hidden;
+}
+.main_foot div ul li a img{
+    /*width:56px;*/
+    /*height:56px;*/
+}
+.main_foot div ul li{
+    float: left;
+    /*margin-right: 40px;*/
+}
+.main_foot div ul li.seven{
+	float:right;
+    /*margin-right:0;*/
+}
+.main_foot div ul li.right{
+    /*margin-right:0;*/
+    float: left;
+}
+.main_foot div ul li.right a img{
+    /*width:22px;*/
+    /*height:56px;*/
+}
+#main-all{
+    display: none;
+    background: #eceded;
+}
+#main-box{
+    background: #eceded;
+}
+/*加载中样式*/
+.login{
+	margin:0 auto;
+}
+.login img{
+-webkit-animation:circle 1s infinite linear;/*匀速 循环*/
+}
+@-webkit-keyframes circle{
+0%{ transform:rotate(0deg); }
+100%{ transform:rotate(360deg); }
+}
+.login span{
+	color:#B6B6B6;
+}
+.logining{
+	font-size: 32px;
+	color: #666;
+	text-align: center;
+}
+footer {
+	position: fixed;
+	z-index: 11;
+	width: 100%;
+	max-width: 720px;
+	background: #FFFFFF;
+	clear: both;
+	z-index: 6;
+	display: block;
+	bottom:0px;
+}
+
+footer a {
+	display: block;
+	position: relative;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	vertical-align:middle;
+}
+
+footer a b {
+	display: block;
+	font-weight: inherit;
+	margin-left:3px;white-space: nowrap;
+	color: #999999;
+}
+
+footer a b.light {
+	color: #ff718d;
+}
+
+footer a span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+footer a.home span {
+	background-image: url(../images/home.png);
+}
+footer a.home span.light {
+	background-image: url(../images/homeHover.png);
+}
+
+footer a.Ingroup span {
+	background-image: url(../images/Ingroup.png);
+}
+footer a.Ingroup b{ margin-left: 4px;}
+footer a.Ingroup span.light {
+	background-image: url(../images/IngroupHover.png);
+}
+footer a.mine{float: right;}
+footer a.mine span {
+	background-image: url(../images/mine.png);
+}
+footer a.mine b{ margin-left:1px;}
+footer a.mine span.light {
+	background-image: url(../images/mineHover.png);
+}
+footer a.Withgroup{float: right;}
+
+footer a.Withgroup span {
+	background-image: url(../images/Withgroup.png);
+}
+footer a.Withgroup b{ margin-left: 4px;}
+footer a.Withgroup span.light {
+	background-image: url(../images/WithgroupHover.png);
+}
+
+footer a.publish{ position:absolute; left: 50%; float: right;}
+
+footer a.publish span {
+	background-image: url(../images/publish.png);
+}
+footer a.publish b{position: absolute; margin-left:0px;}
+footer a.publish span.light {
+	background-image: url(../images/publishhover.png);
+}
+@media screen and (max-width: 460px){
+	.main_foot{
+    border-top: 1px dashed  #D1D1D1;
+	}
+	.active{
+    border-bottom: 2px solid #FF718D;
+}
+}

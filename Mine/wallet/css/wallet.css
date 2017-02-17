@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+.wallet{ overflow:  hidden; clear: both;}
+.wallet div{ background: #FFFFFF; border-bottom: 1px solid #eceded; clear: both;}
+.wallet div span{ float: left; display: block; color: #333333; }
+.wallet div b{ float:right; color: #ff718d; font-weight: inherit;}
+.wallet div i{
+	float: right;
+	display: block;	
+	background-image: url(../images/horn.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;}

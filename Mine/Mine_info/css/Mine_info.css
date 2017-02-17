@@ -1,0 +1,79 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+.Mine_info{ clear: both; overflow: hidden;}
+.Mine_info div{ background: #FFFFFF; border-bottom: 1px solid #eceded; clear: both;}
+.Mine_info div span{ float: left; display: block; color: #333333;}
+.Mine_info div a{ float:right; color: #b6b6b6;}
+.Mine_info div input{ float:right; color: #b6b6b6;-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;}
+.Mine_info div i{
+	float: right;
+	display: block;	
+	background-image: url(../images/dot.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;}
+/*.Mine_info div.headimg{ border: none;}*/
+.Mine_info div img{ float: right; display: block;}
+
+
+.CellList {
+	position: fixed;
+	z-index: 111;
+	top: 0;
+	display: none;
+	background-image: url(../images/bg.png);
+	left: 0;
+}
+.CellList .CellList_warp{ background: #FFFFFF; position: absolute; bottom: 0; left: 0;}
+
+
+.CellList .tit {
+	clear: both;
+	overflow: hidden;
+}
+
+.CellList .tit h3 {
+	float: left;
+	color: #ff718d;
+}
+
+.CellList .tit img {
+	float: right;
+	display: block;
+}
+
+.CellList .List {
+	clear: both;
+	overflow-y: scroll;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.CellList .List p {
+	clear: both;
+	border-bottom: 1px solid #eceded;
+}
+
+.CellList .List p span {
+	color: #333333;
+	display: block;
+	float: left;
+}
+
+.CellList .List p span.light {
+	color: #ff718d;
+}
+
+.CellList .List p b{ float: right;
+	background-size: 100% 100%;
+	background-repeat: no-repeat; display: block;}
+.CellList .List p b.light{
+	background-image: url(../images/ok.png);
+}

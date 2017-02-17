@@ -1,0 +1,76 @@
+body {
+	max-width: 720px;
+	margin: auto auto;
+	background: #eceded;
+	/*background: #000;*/
+}
+
+.cash {
+	overflow: hidden;
+	clear: both;
+}
+
+.cash div {
+	border-bottom: 1px solid #eceded;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+.cash div span {
+	float: left;
+	color: #333333;
+}
+
+.cash div input {
+	float: left;
+	color: #333333;
+}
+
+.cash div b {
+	float: left;
+	color: #333333;
+	font-weight: inherit;
+}
+
+.cash div p {
+	float: left;
+}
+
+.cash div p i {
+	background-repeat: no-repeat;
+	background-image: url(../images/noCheck.png);
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+	
+}
+
+.cash div p i.light {
+	background-image: url(../images/Check.png);
+}
+
+.cash a {
+	clear: both;
+	background: #ff718d;
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*.success {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	background-repeat: no-repeat;
+	background-image: url(../images/success.png);
+	background-size: 100% 100%;
+}
+.fail {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	background-repeat: no-repeat;
+	background-image: url(../images/fail.png);
+	background-size: 100% 100%;
+}*/
